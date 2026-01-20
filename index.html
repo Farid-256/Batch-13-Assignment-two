@@ -30,6 +30,14 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        .footer-section-mobile {
+            min-height: 20vh;
+            background-image: url(./assets/footer-bg.png);
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -483,7 +491,8 @@
     </main>
 
     <footer class="bg-[#351165]">
-        <section class="footer-section">
+        <!-- Footer-desktop -->
+        <section class="footer-section hidden md:block">
             <h1 class="text-center py-10 text-6xl font-bold text-white">Tech<span
                     class="bg-gradient-to-t from-[#f8c8ea] to-[#9403fc] bg-clip-text text-transparent">Wave</span></h1>
 
@@ -507,6 +516,41 @@
                     <a href="##"><img src="./assets/twitter.png" alt=""></a>
                     <h6 class="text-gray-300">Twitter</h6>
                 </div>
+            </div>
+
+            <h5 class="text-center text-gray-400 mt-10">© 2026 TechWave Podcast. All rights reserved.</h5>
+        </section>
+
+        <!-- Footer-mobile -->
+        <section class="footer-section-mobile block md:hidden">
+            <h1 class="text-center py-10 text-6xl font-bold text-white">Tech<span class="bg-gradient-to-t
+            from-[#f8c8ea] to-[#9403fc] bg-clip-text text-transparent">Wave</span></h1>
+
+            <div class="">
+                <div class="flex justify-center gap-10">
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/spotify.png" alt=""></a>
+                        <h6 class="text-gray-300">Spotify</h6>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/apple-podcast.png" alt=""></a>
+                        <h6 class="text-gray-300">Apple Podcasts</h6>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-5 mt-5">
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/youtube.png" alt=""></a>
+                        <h6 class="text-gray-300">YouTube</h6>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <a href="##"><img src="./assets/twitter.png" alt=""></a>
+                        <h6 class="text-gray-300">Twitter</h6>
+                    </div>
+                </div>
+
             </div>
 
             <h5 class="text-center text-gray-400 mt-10">© 2026 TechWave Podcast. All rights reserved.</h5>

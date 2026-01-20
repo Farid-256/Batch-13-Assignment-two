@@ -10,17 +10,10 @@
         .bg-hero {
             height: 100vh;
 
-            background-image:
-                url("./assets/hero-circle.png"),
-                url("./assets/hero-bg.png");
-
-            background-size: 300px, cover;
-
-            background-position: center 80px, center;
-
-            background-repeat:
-                no-repeat,
-                no-repeat;
+            background-image: url("./assets/hero-bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat,
         }
 
         .footer-section {
@@ -79,21 +72,20 @@
 
 
         <!-- Bannar-desktop-start -->
-        <section class="bg-hero relative min-h-screen flex items-center justify-center bg-[#0B0620] overflow-hidden">
+        <section class="bg-hero relative min-h-screen hidden md:flex items-center justify-center bg-[#0B0620]">
 
             <div class="relative text-center px-4">
 
-                <div
-                    class="relative mx-auto flex items-center justify-center border border-blue-900 w-72 h-72 rounded-full">
+                <div class="relative mx-auto flex items-center justify-center">
+                    <img src="./assets/hero-circle.png" alt="">
 
-                    <img src="./assets/microphone.png" class="w-20 md:w-24" alt="mic" />
-                    <span
-                        class="absolute -top-2 right-2 bg-green-400 text-black text-xs px-3 py-1 rounded-full font-bold">
-                        NEW </span>
+                    <img src="./assets/microphone.png" class="absolute w-20 md:w-24" alt="mic" />
+                    <span class="absolute top-10 right-25 bg-green-400 text-black text-xs px-3 py-1 rounded-full
+                        font-bold"> NEW </span>
                 </div>
 
 
-                <h1 class="text-white text-3xl font-bold"> TechWave</h1>
+                <h1 class="text-white text-3xl font-bold mt-5"> TechWave</h1>
 
                 <p class="text-gray-300 max-w-xl mx-auto mt-3 text-sm md:text-base">
                     Your daily dose of tech insights, productivity hacks, and personal growth
@@ -117,7 +109,40 @@
             </div>
         </section>
         <!-- Bannar-mobile-start -->
-        <section>
+        <section class="block md:hidden">
+            <div class="relative text-center px-2">
+
+                <div class="relative mx-auto flex items-center justify-center">
+                    <img src="./assets/hero-circle.png" alt="">
+
+                    <img src="./assets/microphone.png" class="absolute w-20 md:w-24" alt="mic" />
+                    <span class="absolute top-10 right-30 bg-green-400 text-black text-xs px-3 py-1 rounded-full
+                        font-bold"> NEW </span>
+                </div>
+
+
+                <h1 class="text-white text-3xl font-bold mt-5"> TechWave</h1>
+
+                <p class="text-gray-300 max-w-xl mx-auto mt-3 text-sm md:text-base">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+
+
+                <div class="flex gap-4 justify-center mt-6">
+
+                    <button class="text-white px-6 py-2 rounded-full bg-gradient-to-tr from-[#f3e54c] via-[#FB09B4] 
+                to-[#9100F8] font-medium shadow-lg hover:scale-105 transition flex items-center gap-2">
+                        <img src="./assets/spotify.png" alt="">Listen on Spotify
+                    </button>
+
+                    <button class="px-6 py-2 rounded-full border border-green-400 text-green-400
+                     hover:bg-green-400 hover:text-black transition flex items-center gap-2">
+                        <img src="./assets/message.png" alt=""> Subscribe
+                    </button>
+
+                </div>
+
+            </div>
 
         </section>
 

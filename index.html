@@ -9,7 +9,6 @@
     <style>
         .bg-hero {
             height: 100vh;
-
             background-image: url("./assets/hero-bg.png");
             background-size: cover;
             background-position: center;
@@ -51,10 +50,17 @@
             </nav>
 
             <div>
-                <button class="text-white px-6 py-2 rounded-full bg-gradient-to-tr from-[#f3e54c] via-[#FB09B4] 
-                to-[#9100F8] font-medium shadow-lg hover:scale-105 transition flex items-center gap-2">
-                    Subscribe <img src="./assets/Arrow.png" alt="">
+                <button class="relative overflow-hidden text-white px-6 py-2 rounded-full bg-gradient-to-tr 
+                from-[#f3e54c] via-[#FB09B4] to-[#9100F8] font-medium shadow-lg flex items-center gap-2
+                transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40">
+
+                    <span class="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300 hover:opacity-100
+                rounded-full"></span>
+
+                    <span class="relative z-10 flex items-center gap-2">Subscribe <img src="./assets/Arrow.png" alt="">
+                    </span>
                 </button>
+
 
             </div>
         </section>
@@ -109,7 +115,7 @@
             </div>
         </section>
         <!-- Bannar-mobile-start -->
-        <section class="block md:hidden">
+        <section class="bg-hero block md:hidden">
             <div class="relative text-center px-2">
 
                 <div class="relative mx-auto flex items-center justify-center">
@@ -578,7 +584,7 @@
 
             </div>
 
-            <h5 class="text-center text-gray-400 mt-10">© 2026 TechWave Podcast. All rights reserved.</h5>
+            <h5 class="text-center text-gray-400 py-10">© 2026 TechWave Podcast. All rights reserved.</h5>
 
         </section>
     </footer>

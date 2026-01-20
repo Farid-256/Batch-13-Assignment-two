@@ -190,7 +190,8 @@
     </header>
 
     <main>
-        <section class="bg-[#230E3D] px-52 py-10">
+        <!-- Why-choose-desktop -->
+        <section class="bg-[#230E3D] px-52 py-10 hidden md:block">
             <h1 class="text-white text-4xl text-center font-bold py-10">Why Choose TechWave</h1>
             <div class="flex gap-5">
                 <div class="bg-[#351165] text-gray-200 w-[350px] h-[320px] p-2 rounded-xl">
@@ -232,6 +233,63 @@
                     <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Why-choose-mobile -->
+        <section class="block md:hidden bg-[#230E3D] px-52 py-10 ">
+            <h1 class="text-white text-4xl text-center font-bold py-10">Why Choose TechWave</h1>
+            <div class="flex flex-col gap-10">
+                <!-- card-one -->
+                <div class="bg-[#351165] text-gray-200 w-[350px] h-[300px] p-10 rounded-xl">
+                    <img class="py-2" src="./assets/headphone.png" alt="">
+                    <h4 class="font-bold">Premium Audio Quality</h4>
+                    <p class="text-gray-300">Experience crystal-clear sound with professional-grade recording equipment
+                        and expert audio engineering. Every episode is mastered for optimal listening across all devices
+                        and platforms.
+                    </p>
+                </div>
+
+                <!-- card-two -->
+                <div class="bg-[#351165] text-gray-200 w-[350px] h-[300px] p-10 rounded-xl">
+                    <img class="py-2" src="./assets/device.png" alt="">
+                    <h4 class="font-bold">Mobile Friendly</h4>
+                    <p class="text-gray-300">Listen on the go with seamless mobile experience and offline downloads.
+                    </p>
+                </div>
+
+                <!-- card-three -->
+                <div class="bg-[#351165] text-gray-200 w-[350px] h-[300px] p-10 rounded-xl">
+                    <img class="py-2" src="./assets/location.png" alt="">
+                    <h4 class="font-bold">Global Community</h4>
+                    <p class="text-gray-300">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                </div>
+
+                <!-- card-four -->
+                <div class="bg-[#351165] text-gray-200 w-[350px] h-[300px] p-10 rounded-xl">
+                    <img class="py-2" src="./assets/interview.png" alt="">
+                    <h4 class="font-bold">Exclusive Interviews</h4>
+                    <p class="text-gray-300">Get unprecedented access to industry titans, startup founders, and tech
+                        visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep
+                        into their journeys, failures, and success strategies.</p>
+                </div>
+
+                <!-- card-five -->
+                <div class="bg-[#351165] text-gray-200 w-[350px] h-[300px] p-10 rounded-xl">
+                    <img src="./assets/resource.png" alt="">
+                    <h4 class="font-bold">Rich Resources</h4>
+                    <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
         </section>
 
         <section class="px-52 py-10 bg-[#1A0B2E]">
@@ -359,29 +417,6 @@
 
         </section>
     </footer>
-
-    <!-- -------------------------------------- -->
-
-    <section class="text-center p-10">
-        <!-- Desktop text -->
-        <div>
-            <h3 class="hidden md:block text-2xl font-bold">
-                Desktop
-            </h3>
-        </div>
-
-        <!-- Mobile text -->
-        <div>
-            <h3 class="block md:hidden text-2xl font-bold">
-                Mobile
-            </h3>
-        </div>
-    </section>
-
-
-
-
-
 
 </body>
 

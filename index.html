@@ -30,6 +30,33 @@
             background-position: top center;
             background-repeat: no-repeat;
         }
+
+        .floating-button {
+
+            animation: floatUpDown 3s ease-in-out infinite;
+        }
+
+        @keyframes floatUpDown {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-15px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            75% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -62,9 +89,6 @@
                     </span>
                 </button>
 
-                
-
-
             </div>
         </section>
         <!-- Navbar-mobile-start -->
@@ -89,8 +113,12 @@
                     <img src="./assets/hero-circle.png" alt="">
 
                     <img src="./assets/microphone.png" class="absolute w-20 md:w-24" alt="mic" />
-                    <span class="absolute top-10 right-25 bg-green-400 text-black text-xs px-3 py-1 rounded-full
+
+
+                    <span class="floating-button absolute top-10 right-25 bg-green-400 text-black text-xs px-3 py-1 rounded-full
                         font-bold"> NEW </span>
+
+
                 </div>
 
 
